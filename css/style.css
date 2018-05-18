@@ -2,3 +2,49 @@ body {
   background-color: #dadada;
   font-size: 10px;
 }
+
+.container {
+   text-align: center;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 1.4em;
+  padding: 20px;
+}
+
+div {
+  position: relative;
+  text-align: center;
+  float: left;
+  margin: 1% 0;
+  width: 100%;
+  padding-top: 5px;
+}
+
+@media screen and (min-width: 575px){
+   div {
+    margin: 1%;
+    width: 48%;
+  }
+}
+
+@media screen and (min-width: 991px){
+   div {
+    margin: 1%;
+    width: 21%;
+  }
+}
+
+img {
+  height: 300px;
+  width: 150px;
+  max-width: 100%;
+}
+
+.top-left {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  font-size: 1.8em;
+}
