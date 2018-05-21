@@ -1,3 +1,7 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #dadada;
   font-size: 10px;
@@ -14,11 +18,18 @@ body {
 }
 
 div {
-  position: relative;
-  text-align: center;
+  margin: auto;
+  background-image: none;
+  background-color: transparent;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   float: left;
   margin: 1% 0;
   width: 100%;
+  min-width: 200px;
+  max-width: 400px;
+  min-height: 250px;
   padding-top: 5px;
 }
 
@@ -36,15 +47,18 @@ div {
   }
 }
 
-img {
-  height: 300px;
-  width: 150px;
-  max-width: 100%;
+.preview-baku {
+  background-image: url(/images/baku.jpg)
 }
 
-.top-left {
-  position: absolute;
-  top: 40px;
-  left: 30px;
-  font-size: 1.8em;
+.preview-london {
+  background-image: url(/images/london.png)
+}
+
+.preview-madrid {
+  background-image: url(/images/madrid.jpg)
+}
+
+.preview-rome {
+  background-image: url(/images/rome.jpg)
 }
